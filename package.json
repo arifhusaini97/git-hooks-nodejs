@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/arifhusaini97/git-hooks-nodejs#readme",
   "devDependencies": {
-    "jest": "^27.1.0",
-    "pre-commit": "^1.2.2"
+    "husky": "^7.0.2",
+    "jest": "^27.1.0"
   },
-  "pre-commit": [
-    "test"
-  ]
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  }
 }
